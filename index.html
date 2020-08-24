@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="items-wrapper">
+            <article class="item" >
+                <figure class="item__img">
+                    <img src="images/item-photo.jpg" class="item__photo" alt="House">
+                    <div class="item__tags">
+                        <div class="item__tag">Услуги 0%</div>
+                        <div class="item__tag">Комфорт+</div>
+                    </div>
+                </figure>
+                <h3 class="subheader item__subheader">
+                    Расцветай на Маркса
+                </h3>
+                <p class="item__deadline">
+                    Срок сдачи до 3 кв. 2022 г.
+                </p>
+                <p class="item__subway">
+                    Студенческая
+                    <span class="item__subway_time">
+                        5 мин.
+                    </span>
+                </p>
+                <p class="item__address">
+                    пр. Карла Маркса, 167/2
+                </p>
+            </article>
+        </div>
+        <form class="filter-form" id="filter-form">
+            <aside class="filter__block">
+                <div class="filter__item-header">
+                    <h3 class="subheader">
+                        Близость к метро
+                    </h3>
+                    <svg class="show-hide-button" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.036 0.611083L0.191897 6.45712C-0.0639745 6.71364 -0.0639745 7.12925 0.191897 7.38642C0.44777 7.64294 0.863375 7.64294 1.11925 7.38642L6.49964 2.00408L11.88 7.38577C12.1359 7.64229 12.5515 7.64229 12.808 7.38577C13.0639 7.12925 13.0639 6.713 12.808 6.45648L6.96399 0.610435C6.71076 0.357856 6.28863 0.357856 6.036 0.611083Z" fill="#111111"/>
+                    </svg>
+                </div>
+                <div class="filter__body">
+                    <div class="subway__buttons-distance-wrapper">
+
+                        <label class="label_subway-distance">
+                            <input type="checkbox" class="input_subway input_subway-distance" form="filter-form" hidden>
+                                <div class="button button_subway-distance">
+                                    < 10
+                                </div>
+                        </label>
+                        <label class="label_subway-distance">
+                            <input type="checkbox" class="input_subway input_subway-distance" form="filter-form" hidden>
+                                <div class="button button_subway-distance">
+                                    10-20
+                                </div>
+                        </label>
+                        <label class="label_subway-distance">
+                            <input type="checkbox" class="input_subway input_subway-distance" form="filter-form" hidden>
+                                <div class="button button_subway-distance">
+                                    20-40
+                                </div>
+                        </label>
+                        <label class="label_subway-distance">
+                            <input type="checkbox" class="input_subway input_subway-distance" form="filter-form" hidden>
+                                <div class="button button_subway-distance">
+                                    40+
+                                </div>
+                        </label>
+                    </div>
+                    <label class="label_subway-distance">
+                        <input type="checkbox" class="input_subway input_subway-all" form="filter-form" hidden checked>
+                            <div class="button button_subway-all">
+                                Любая
+                            </div>
+                    </label>
+                </div>
+            </aside>
+            <aside class="filter__block deadline">
+                <div class="filter__item-header">
+                    <h3 class="subheader">
+                        Срок сдачи
+                    </h3>
+                    <svg class="show-hide-button" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.036 0.611083L0.191897 6.45712C-0.0639745 6.71364 -0.0639745 7.12925 0.191897 7.38642C0.44777 7.64294 0.863375 7.64294 1.11925 7.38642L6.49964 2.00408L11.88 7.38577C12.1359 7.64229 12.5515 7.64229 12.808 7.38577C13.0639 7.12925 13.0639 6.713 12.808 6.45648L6.96399 0.610435C6.71076 0.357856 6.28863 0.357856 6.036 0.611083Z" fill="#111111"/>
+                    </svg>   
+                </div>
+                <div class="filter__body">
+                    <label class="label radio__label">
+                        <input type="radio" class="radio__input" form="filter-form" name="deadline__radio" checked hidden>
+                        <span class="radio__check"></span>
+                        <span>Любой</span>
+                    </label>
+                    <label class="label radio__label">
+                        <input type="radio" class="radio__input" form="filter-form" name="deadline__radio" hidden>
+                        <span class="radio__check"></span>
+                        <span>Сдан</span>
+                    </label>
+                    <label class="label radio__label">
+                        <input type="radio" class="radio__input" form="filter-form" name="deadline__radio" hidden>
+                        <span class="radio__check"></span>
+                        <span>В этом году</span>
+                    </label>
+                    <label class="label radio__label">
+                        <input type="radio" class="radio__input" form="filter-form" name="deadline__radio" hidden>
+                        <span class="radio__check"></span>
+                        <span>В следующем году</span>
+                    </label>
+                </div>
+                
+            </aside>
+            
+            <aside class="filter__block additions">
+                <div class="filter__item-header">
+                    <h3 class="subheader">
+                        Дополнительные опции
+                    </h3>
+                        <svg class="show-hide-button" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.036 0.611083L0.191897 6.45712C-0.0639745 6.71364 -0.0639745 7.12925 0.191897 7.38642C0.44777 7.64294 0.863375 7.64294 1.11925 7.38642L6.49964 2.00408L11.88 7.38577C12.1359 7.64229 12.5515 7.64229 12.808 7.38577C13.0639 7.12925 13.0639 6.713 12.808 6.45648L6.96399 0.610435C6.71076 0.357856 6.28863 0.357856 6.036 0.611083Z" fill="#111111"/>
+                        </svg> 
+                </div>
+                <div class="filter__body">
+                    <label class="label checkbox__label">
+                        <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                        <span class="checkbox__check"></span>
+                        <span>Двор без машин</span>
+                    </label>
+                    <label class="label checkbox__label">
+                        <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                        <span class="checkbox__check"></span>
+                        <span>Высокие потолки</span>
+                    </label>
+                    <label class="label checkbox__label">
+                        <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                        <span class="checkbox__check"></span>
+                        <span>Есть кладовые</span>
+                    </label>
+                    <label class="label checkbox__label">
+                        <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                        <span class="checkbox__check"></span>
+                        <span>Панорамные окна</span>
+                    </label>
+                    <label class="label checkbox__label">
+                        <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                        <span class="checkbox__check"></span>
+                        <span>Малоэтажный (<10 этажей)</span>
+                    </label>
+                    <a class="see-more-additions">Показать еще (3)</a>
+                    <div class="hidden-additions">
+                        <label class="label checkbox__label">
+                            <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                            <span class="checkbox__check"></span>
+                            <span>Вариант 6</span>
+                        </label>
+                        <label class="label checkbox__label">
+                            <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                            <span class="checkbox__check"></span>
+                            <span>Вариант 7</span>
+                        </label>
+                        <label class="label checkbox__label">
+                            <input type="checkbox" class="checkbox__input" form="filter-form" hidden>
+                            <span class="checkbox__check"></span>
+                            <span>Вариант 8</span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+            <aside class="services">
+                <label class="label services__label">
+                    <input type="checkbox" class="services__toggle" form="filter-form" checked hidden>
+                    <span class="services__toggle-button"></span>
+                    <span>Услуги 0%</span>
+                </label>
+            </aside>
+            <button type="submit" form="filter-form" class="button button_submit">
+                Применить фильтры
+            </button>
+            <button type="reset" form="filter-form" class="button button_reset">
+                Сбросить фильтры
+                <svg class="reset-icon" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0.942702L7.5573 0L4.49999 3.05729L1.4427 0L0.5 0.942702L3.55729 3.99999L0.5 7.0573L1.4427 8L4.49999 4.94271L7.55728 8L8.49998 7.0573L5.44271 3.99999L8.5 0.942702Z" fill="#5F5F5F"/>
+                </svg> 
+            </button>
+        </form>
+        <figure class="see-more-items">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#F03B8C"/>
+                <path d="M6.17188 18.8281H18.8281V6.17188C18.8281 5.52465 19.3528 5 20 5C20.6472 5 21.1719 5.52465 21.1719 6.17188V18.8281H33.8281C34.4754 18.8281 35 19.3528 35 20C35 20.6472 34.4754 21.1719 33.8281 21.1719H21.1719V33.8281C21.1719 34.4754 20.6472 35 20 35C19.3528 35 18.8281 34.4754 18.8281 33.8281V21.1719H6.17188C5.52465 21.1719 5 20.6472 5 20C5 19.3528 5.52465 18.8281 6.17188 18.8281Z" fill="white"/>
+            </svg>                
+            <figcaption class="subheader subheader_see-more-items">
+                Показать еще
+            </figcaption>
+        </figure>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

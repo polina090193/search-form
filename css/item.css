@@ -1,0 +1,94 @@
+.items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    justify-content: space-between;
+
+    grid-area: items;
+    min-height: 100%;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10px;
+
+    padding-bottom: 2%;
+    margin-bottom: 6vmin;
+    width: 100%;
+}
+
+.item__img {
+    position: relative;
+
+}
+
+.item__photo {
+    border-radius: 10px 10px 0 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.item__tags {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.item__tag {
+    background-color: #F03B8C;
+    border-radius: 5px;
+
+    padding: 4.35% 10%;
+    margin-right: 9%;
+
+    font-weight: 500;
+    font-size: .8rem;
+    color: white;    
+
+    white-space: nowrap;
+}
+
+.item__subheader {
+    margin-left: 5%;
+    margin-top: 4.6%;
+
+}
+
+.item__deadline {
+    margin-left: 5%;
+    margin-top: 5.4%;
+
+    font-size: 1.25rem;
+}
+
+.item__subway {
+    margin-left: 0.2rem;
+
+    margin-top: 5.4%;
+}
+
+.item__subway::before {
+    content: url(../images/subway-icon.svg);
+    margin-left: 4.6%;
+    margin-right: 2%;
+}
+
+.item__subway_time {
+    color: #8F8F8F;
+}
+
+.item__address {
+    color: #8F8F8F;
+    margin-left: 5%;
+
+
+    margin-top: 3%;
+    font-size: 1.25rem;
+    line-height: 180%;
+}
+
+.item__subway_time::after {
+    content: url(../images/subway-pedestrian.svg);
+}

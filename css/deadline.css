@@ -1,0 +1,34 @@
+.deadline {
+    margin-top: 15%;
+}
+
+.radio__label {
+    margin-top: 0.75em;
+    font-size: 1.25rem;
+}
+
+.radio__input ~ .radio__check {
+
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    border: 1px solid #F03B8C;
+    border-radius: 100%;
+    height: 0.875em;
+    width: 0.875em;
+    margin-right: 0.5rem;
+
+    cursor: pointer;
+}
+
+.radio__input:hover ~ .radio__check,
+.radio__input:checked ~ .radio__check {
+    border: calc(0.875em / 3) solid #F03B8C;
+    height: 1em;
+    width: 1em;
+}
+
+.radio__input:checked ~ span {
+    color: #F03B8C;
+}

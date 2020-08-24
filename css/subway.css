@@ -1,0 +1,27 @@
+.subway__buttons-distance-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    justify-content: space-between;
+}
+
+.button_subway-distance,
+.button_subway-all {
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+}
+
+.label_subway-distance {
+    cursor: pointer;
+}
+
+.input_subway:checked ~ .button_subway-distance,
+.input_subway:checked ~ .button_subway-all {
+    background-color: #F03B8C;
+    border-color: #F03B8C;
+    color: white;
+}
+
+.button_subway-all {
+    margin-top: 10px;
+}

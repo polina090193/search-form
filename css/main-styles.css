@@ -1,0 +1,42 @@
+body {
+    background-color: #F9F9F9;
+}
+
+.body-wrapper {
+    display: grid;
+    grid-template-areas: 
+        "items form"
+        "see-more-items form";
+    grid-template-columns: 74.4% 23.1%;
+    justify-content: space-between;
+
+    width: 81.82%;
+    margin: 2.2% 9.09vw 5.94vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+
+}
+
+.subheader {
+    font-weight: bold;
+    font-size: 1.25rem;
+
+}
+
+.button {
+    background-color: transparent;
+    border: solid 1px #E5E5E5;
+    color: #AFAFAF;
+
+    height: 3.125em;
+    border-radius: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:active {
+    background-color: white;
+}
