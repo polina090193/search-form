@@ -25,7 +25,6 @@
     cursor: pointer;
 }
 
-.checkbox__input:hover ~ .checkbox__check,
 .checkbox__input:checked ~ .checkbox__check {
     background-color: #F03B8C;
     background-image: url(../images/checkbox.svg);
