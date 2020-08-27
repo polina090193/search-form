@@ -26,4 +26,8 @@
         grid-template-columns: 100%;
         row-gap: 1%;
     }
+
+    .filter-form {
+        margin-bottom: 1vh;
+    }
 }
